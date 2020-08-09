@@ -16,6 +16,7 @@ using namespace std;
 #define all(v) v.begin(), v.end()
 #define sz(x) (int)x.size()
 #define endl "\n"
+#define MAXN 105
 
 typedef long long ll;
 typedef vector<int> vi;
