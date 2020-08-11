@@ -34,7 +34,7 @@ int N, K;
 int arr[500010], L[500010], R[500010];
  
 int main() {
-    setIO("diamond");
+    // setIO("diamond");
     cin >> N >> K;
     for (int i = 1; i <= N; i++) cin >> arr[i];
     sort(arr + 1, arr + N + 1);
