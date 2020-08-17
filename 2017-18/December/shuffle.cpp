@@ -37,7 +37,7 @@ void dfs(int n){
     set<int> s;
     while (visited[n] == 0){
         visited[n] = 1;
-        s.insert(n);
+        s.ins(n);
         n = pos[n];
     }
     
