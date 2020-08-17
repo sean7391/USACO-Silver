@@ -1,7 +1,9 @@
 // February 2017—Why Did the Cow Cross the Road III: http://www.usaco.org/index.php?page=viewproblem2&cpid=716
 
 #include <bits/stdc++.h>
+
 using namespace std;
+
 #define pb push_back
 #define f first
 #define s second
