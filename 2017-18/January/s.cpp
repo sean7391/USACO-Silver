@@ -43,7 +43,7 @@ int main() {
 	largest = max(largest, max(a, b));
 	v.pb(mp(a, 1));
 	v.pb(mp(b, 0));
-	    v2.pb(mp(a, b));
+	v2.pb(mp(a, b));
     }
     sort(v.begin(), v.end());
     sort(v2.begin(), v2.end());
