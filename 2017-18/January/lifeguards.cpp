@@ -31,8 +31,7 @@ void setIO(string name){
 }
 
 int N, smallest = INT_MAX, largest = -1;
-vector<pii> v;
-vector<pii> v2;
+vector<pii> v, v2;
 
 int main() {
     //setIO("lifeguards"); 
