@@ -26,9 +26,9 @@ typedef pair<int, int> pii;
 const int dx[4]= {-1, 1, 0, 0}, dy[4] = {0, 0, -1, 1};
  
 void setIO(string name){
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	freopen((name + ".in").c_str(), "r", stdin);
-	freopen((name + ".out").c_str(), "w", stdout);
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    freopen((name + ".in").c_str(), "r", stdin);
+    freopen((name + ".out").c_str(), "w", stdout);
 }
  
 struct Edge{
