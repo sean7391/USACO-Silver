@@ -58,7 +58,7 @@ int main() {
 	for (int i = 1; i < 2 * N; i++){
 		if (cur == 0 && v[i].s == 1)
 			total -= (v[i].f - v[i - 1].f);
-		if (cur == 1)
+		else if (cur == 1)
 			minAlone = min(minAlone, v[i].f - v[i - 1].f);
  
 		if (v[i].s == 1) cur++;
