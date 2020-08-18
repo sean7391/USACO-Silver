@@ -47,24 +47,24 @@ int main() {
 	}
 	sort(v.begin(), v.end());
 	sort(v2.begin(), v2.end());
-  
+
 	int curEnd = v2[0].s, minAlone = INT_MAX, cur = 1;
 	for (int i = 1; i < N; i++){
 		if (v2[i].s <= curEnd) minAlone = 0;
 		else curEnd = v2[i].s;
 	}
- 
+
 	int total = largest - smallest;
 	for (int i = 1; i < 2 * N; i++){
 		if (cur == 0 && v[i].s == 1)
 			total -= (v[i].f - v[i - 1].f);
 		else if (cur == 1)
 			minAlone = min(minAlone, v[i].f - v[i - 1].f);
- 
+
 		if (v[i].s == 1) cur++;
 		else cur--;
 	}
- 
+
     cout << total - minAlone << endl;
     return 0;
 }
