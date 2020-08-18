@@ -37,32 +37,32 @@ vector<pii> v2;
 int main() {
     setIO("lifeguards"); 
     cin >> N;
-	for (int i = 0; i < N; i++){
-		int a, b; cin >> a >> b;
-		smallest = min(smallest, min(a, b));
-		largest = max(largest, max(a, b));
-		v.pb(mp(a, 1));
-		v.pb(mp(b, 0));
-		v2.pb(mp(a, b));
-	}
-	sort(v.begin(), v.end());
-	sort(v2.begin(), v2.end());
+    for (int i = 0; i < N; i++){
+        int a, b; cin >> a >> b;
+	smallest = min(smallest, min(a, b));
+	largest = max(largest, max(a, b));
+	v.pb(mp(a, 1));
+	v.pb(mp(b, 0));
+	    v2.pb(mp(a, b));
+    }
+    sort(v.begin(), v.end());
+    sort(v2.begin(), v2.end());
 
-	int curEnd = v2[0].s, minAlone = INT_MAX, cur = 1;
-	for (int i = 1; i < N; i++){
-		if (v2[i].s <= curEnd) minAlone = 0;
-		else curEnd = v2[i].s;
-	}
+    int curEnd = v2[0].s, minAlone = INT_MAX, cur = 1;
+    for (int i = 1; i < N; i++){
+	if (v2[i].s <= curEnd) minAlone = 0;
+	else curEnd = v2[i].s;
+    }
 
-	int total = largest - smallest;
-	for (int i = 1; i < 2 * N; i++){
-		if (cur == 0 && v[i].s == 1)
-			total -= (v[i].f - v[i - 1].f);
-		else if (cur == 1)
-			minAlone = min(minAlone, v[i].f - v[i - 1].f);
+    int total = largest - smallest;
+    for (int i = 1; i < 2 * N; i++){
+	if (cur == 0 && v[i].s == 1)
+	    total -= (v[i].f - v[i - 1].f);
+	    else if (cur == 1)
+		minAlone = min(minAlone, v[i].f - v[i - 1].f);
 
-		if (v[i].s == 1) cur++;
-		else cur--;
+	    if (v[i].s == 1) cur++;
+	    else cur--;
 	}
 
     cout << total - minAlone << endl;
