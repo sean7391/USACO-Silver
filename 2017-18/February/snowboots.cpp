@@ -39,17 +39,17 @@ void dfs(int i, int b){
 	visited[i][b] = true;
  
 	if (i == N - 1){
-		ans = min(ans, b);
-		return;
+	    ans = min(ans, b);
+	    return;
 	}
  
 	for (int j = i + 1; j < N && j - i <= step[b]; j++)
-		if (arr[j] <= depth[b])
-			dfs(j, b);
+	    if (arr[j] <= depth[b])
+		dfs(j, b);
  
 	for (int j = b + 1; j < B; j++)
-		if (arr[i] <= depth[j])
-			dfs(i, j);
+	    if (arr[i] <= depth[j])
+		dfs(i, j);
 }
  
 int main() {
@@ -58,9 +58,9 @@ int main() {
     for (int i = 0; i < N; i++) cin >> arr[i];
     for (int i = 0; i < B; i++) cin >> depth[i] >> step[i];
  
-	dfs(0, 0);
-	cout << ans << endl;
-	return 0;
+    dfs(0, 0);
+    cout << ans << endl;
+    return 0;
 }
 
 /*
