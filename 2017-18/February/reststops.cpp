@@ -34,7 +34,7 @@ int L, N, rF, rB, curMax = 0, pos[1000000], taste[1000000];
 bool isMax[1000000];
  
 int main() {
-    setIO("reststops"); 
+    //setIO("reststops"); 
     cin >> L >> N >> rF >> rB;
     for (int i = 0; i < N; i++) cin >> pos[i] >> taste[i];
     for (int i = N - 1; i >= 0; i--){
