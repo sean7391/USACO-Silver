@@ -25,13 +25,12 @@ typedef pair<int, int> pii;
 const int dx[4]= {-1, 1, 0, 0}, dy[4] = {0, 0, -1, 1};
  
 void setIO(string name){
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	freopen((name + ".in").c_str(), "r", stdin);
-	freopen((name + ".out").c_str(), "w", stdout);
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    freopen((name + ".in").c_str(), "r", stdin);
+    freopen((name + ".out").c_str(), "w", stdout);
 }
  
-int L, N, rF, rB, curMax = 0;
-int pos[1000000], taste[1000000];
+int L, N, rF, rB, curMax = 0, pos[1000000], taste[1000000];
 bool isMax[1000000];
  
 int main() {
@@ -40,8 +39,8 @@ int main() {
     for (int i = 0; i < N; i++) cin >> pos[i] >> taste[i];
     for (int i = N - 1; i >= 0; i--){
     	if (taste[i] > curMax){
-    		isMax[i] = true;
-    		curMax = taste[i];
+    	    isMax[i] = true;
+    	    curMax = taste[i];
     	}
     }
  
@@ -49,9 +48,9 @@ int main() {
     int lastStop = 0;
     for (int i = 0; i < N; i++){
     	if (isMax[i]){
-    		int x = pos[i] - lastStop;
-    		ans += ((ll)(x * rF) - (ll)(x * rB)) * taste[i];
-    		lastStop = pos[i];
+    	    int x = pos[i] - lastStop;
+    	    ans += ((ll)(x * rF) - (ll)(x * rB)) * taste[i];
+    	    lastStop = pos[i];
     	}
     }
  
