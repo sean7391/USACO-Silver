@@ -58,8 +58,8 @@ int main() {
     }
     
     int areaAns = 0, perAns = INT_MAX;
-    for (int i = 0; i < N; i++){
-        for (int j = 0; j < N; j++){
+    for (int i = 0; i < N; i++)
+        for (int j = 0; j < N; j++)
             if (!visited[i][j] && grid[i][j] == 1){
                 curSize = 0;
                 curPer = 0;
