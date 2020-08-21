@@ -36,7 +36,6 @@ bool owns[100001];
 int main(){
     //setIO("highcard");
     int n, cnt = 0; cin >> n;
-
     for (int i = 0; i < n; i++){
         int temp; cin >> temp;
         owns[temp] = true;
