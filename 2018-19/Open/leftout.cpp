@@ -1,4 +1,4 @@
-// U.S. Open 2019—Left Out: http://www.usaco.org/index.php?page=viewproblem2&cpid=942
+// 2019 U.S. Open—Left Out: http://www.usaco.org/index.php?page=viewproblem2&cpid=942
 
 #include <bits/stdc++.h>
 
