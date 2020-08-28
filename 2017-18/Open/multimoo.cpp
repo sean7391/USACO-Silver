@@ -77,8 +77,7 @@ int main() {
                     ff2(a, b, arr[i][j], arr[a][b]);
                     ans2 = max(ans2, curSize);
                     curSize = 0;
-                    
-                    
+                   
                     if (ans2 == N * N){
                         bad = true;
                         break;
