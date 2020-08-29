@@ -38,17 +38,17 @@ bool ok(int x){
 }
 
 int solve(int N){ 
-	int x = (N - 1) / 8;
-	return v[N - 8 * x - 1] + 15 * x;
+    int x = (N - 1) / 8;
+    return v[N - 8 * x - 1] + 15 * x;
 }
  
 int main(){
-  //setIO("moobuzz");
-	for (int i = 1; i < 16; i++) if (ok(i)) v.pb(i);
+    //setIO("moobuzz");
+    for (int i = 1; i < 16; i++) if (ok(i)) v.pb(i);
 	        
-	int N; cin >> N;
-	cout << solve(N) << endl;
-  return 0;
+    int N; cin >> N;
+    cout << solve(N) << endl;
+    return 0;
 }
 
 /*
