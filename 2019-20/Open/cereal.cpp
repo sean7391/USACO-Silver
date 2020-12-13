@@ -75,6 +75,5 @@ a cow earlier than them in line, then they too will not get anything.
 However, if a cow had taken the front cow's first choice, and it was their first choice, and their second choice was taken
 by someone later than them in line, then they get the second choice but this could cause a cascade that calls for recursion. 
 It is possible that their second choice was not taken by anyone too. Either way, recursion is necessary. 
-
 */
 
