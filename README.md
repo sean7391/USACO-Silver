@@ -2,8 +2,6 @@
 New USACO Silver Problems.
 
 Not Solved:
-Where's Bessie, Milk Measurements, Teleportation, Cow Steeplechase II
-
-Saving February and Open from 2020 for pre-contest prep.
+Where's Bessie, Milk Measurements, Teleportation, Cow Steeplechase II, Swapity Swapity Swap, Triangles, Clock Tree, Moo Particle
 
 Wish me luck!
