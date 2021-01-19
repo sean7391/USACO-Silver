@@ -86,7 +86,7 @@ bool maxPCL(int x){
 }
 
 int main(){
-    setIO("where");
+    //setIO("where");
     cin >> N;
     for (int i = 0; i < N; i++) cin >> img[i];
     for (int i1 = 0; i1 < N; i1++)
