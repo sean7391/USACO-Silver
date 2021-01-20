@@ -36,8 +36,7 @@ map<int, int> mp;
 
 int main(){
     //setIO("measurement");
-    cin >> N >> G;
-    A.rsz(N);
+    cin >> N >> G; A.rsz(N);
     trav(m, A) cin >> m.day >> m.cow >> m.delta;
     sort(A.begin(), A.end(), [](const measurement &a, const measurement &b){
         return a.day < b.day;
@@ -65,4 +64,19 @@ int main(){
     cout << ans << endl;
     return 0;
 }
+
+/*
+We can use maps to keep track of the frequency of cow measurement, and the 
+measurement for each cow. If a cow in question wasn't at the top but is at the 
+top now, then the display obviously has to be changed. 
+
+If the cow was already at the top, and is no longer at the top, then the display
+has to be changed. 
+
+If the cow was already at the top, and there was at least one other cow at the top
+with it, then the display has to be changed.
+
+If the cow was already at the top, and there are currently more than one cow at the top,
+then the display has to be changed. 
+*/
 
